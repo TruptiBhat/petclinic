@@ -2,11 +2,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: petclinic-mem-hpa
-  labels:
-    app: petclinic-app
 spec:
-  selector:
-    app: petclinic-app
   maxReplicas: 2
   minReplicas: 1
   scaleTargetRef:
