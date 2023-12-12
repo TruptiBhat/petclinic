@@ -5,6 +5,8 @@ metadata:
   labels:
     app: petclinic-app
 spec:
+  selector:
+    app: petclinic-app
   maxReplicas: 2
   minReplicas: 1
   scaleTargetRef:
